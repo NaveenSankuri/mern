@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{>header}}
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="loginbg">
+    <h2>Courier</h2>
+    <div class="log">
+        <h2>Login</h2>
+        <div class="log-form">
+            <form action="/home" method="post">
+                <font>UserName : </font><input type="text" name="uid"><br><br>
+                <font>Password : </font><input type="text" name="pass"><br><br>
+                <input type="checkbox" name="check"><font> Iam not Robot</font><br><br>
+                <input type="submit" name="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+
+</html>

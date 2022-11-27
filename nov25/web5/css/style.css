@@ -1,0 +1,14 @@
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, rgb(10, 156, 219), rgb(12, 125, 6));
+}
+
+h1 {
+    text-align: center;
+}
+
+.navbar {
+    background: linear-gradient(120deg, grey, silver);
+    position: fixed;
+    width: 100%;
+}

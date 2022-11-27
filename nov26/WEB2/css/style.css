@@ -1,0 +1,36 @@
+.homebg {
+    height: 200vh;
+    background-color: aqua;
+}
+
+.loginbg {
+    height: 100vh;
+    background: linear-gradient(120deg, aqua, rgb(218, 0, 221));
+}
+
+.loginbg h2 {
+    text-align: center;
+}
+
+.log-form {
+    width: 400px;
+    background-color: aliceblue;
+    border: 1px solid silver;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    left: 40%;
+    top: 25%;
+}
+
+.log-form h2 {
+    padding: 0px 0px 10px 0px;
+    color: red;
+    border-bottom: 1px solid silver;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(120deg, grey, silver);
+}

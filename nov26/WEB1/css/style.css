@@ -1,0 +1,46 @@
+.loginbg {
+    height: 100vh;
+    background: linear-gradient(120deg, rgb(14, 228, 210), rgb(171, 4, 186));
+}
+
+.log h2 {
+    text-align: center;
+}
+
+.log-form {
+    border: 1px solid brown;
+    width: 400px;
+    position: absolute;
+    padding: 20px;
+    border-radius: 10px;
+    left: 40%;
+    top: 25%;
+}
+
+.log-form h2 {
+    padding: 0px 0px 20px 0px;
+    border-bottom: 1px solid silver;
+}
+
+.log-form #textField {
+    background-color: azure;
+    border-radius: 10px;
+}
+
+.log-form #form-submit {
+    background: linear-gradient(130deg, red, blue);
+    color: rgb(42, 165, 120);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.homebg {
+    height: 200vh;
+    background-color: aqua;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(120deg, grey, silver);
+}
