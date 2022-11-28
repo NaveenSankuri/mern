@@ -9,14 +9,15 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 
 //using middleware
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use('', userRoutes);
-app.use(express.static('static'));
 app.use(session({
     secret: 'happybirthday',
     resave: false,
     saveUninitialized: false
 }))
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use('', userRoutes);
+app.use(express.static('static'));
+
 
 //setting view engine
 app.engine('mustache', mustacheExpress(VIEWS_PATH + '/partials', '.mustache'));

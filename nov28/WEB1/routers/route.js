@@ -1,18 +1,32 @@
 const express = require('express');
 const router = express.Router();
 
+
+let log = (req, res, next) => {
+
+    if (req.session) {
+        if (req.session.user) {
+            next()
+        }
+        else {
+            res.redirect('/');
+        }
+    } else {
+        res.redirect('/')
+    }
+}
 router.get('/home', (req, res) => {
     res.render('home');
 })
-router.get('/track', (req, res) => {
+router.get('/track', log, (req, res) => {
     res.render('track');
 })
 
-router.get('/history', (req, res) => {
+router.get('/history', log, (req, res) => {
     res.render('history');
 })
 
-router.get('/about', (req, res) => {
+router.get('/about', log, (req, res) => {
     res.render('about');
 })
 
@@ -36,7 +50,7 @@ router.post('/home', (req, res) => {
         res.render('home', x);
     } else {
         console.log('Invalid Credentials!!');
-        res.redirect('/login');
+        res.redirect('/');
     }
 })
 
