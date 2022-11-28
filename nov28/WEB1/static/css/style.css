@@ -1,0 +1,46 @@
+.homebg {
+    height: 200vh;
+    background-color: aqua;
+}
+
+.navbar {
+    width: 100%;
+    background: linear-gradient(120deg, yellow, rgb(143, 230, 143));
+}
+
+.loginbg {
+    height: 100vh;
+    background: linear-gradient(120deg, rgb(239, 62, 239), rgb(0, 238, 255));
+}
+
+.loginbg h2 {
+    text-align: center;
+}
+
+.log h2 {
+    padding: 0px 0px 10px 0px;
+}
+
+.log {
+    border: 1px solid silver;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    left: 40%;
+    top: 25%;
+    background-color: aliceblue;
+    width: 400px;
+}
+
+.log-form {
+    padding: 10px;
+}
+
+.log-form #submit {
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    border-radius: 30px;
+    background-color: rgb(43, 226, 226);
+    color: brown;
+}
